@@ -1,1 +1,133 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom Button Styles */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-2xl p-8 shadow-lg border border-gray-100;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-cozy-500;
+}
+
+/* Hover Effects */
+.hover-lift {
+  @apply transition-transform duration-300 hover:transform hover:scale-105;
+}
+
+/* Focus States */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2;
+}
+
+/* Header Navigation Styles */
+.nav-link {
+  @apply relative text-gray-600 hover:text-brand-500 transition-all duration-300 font-medium py-2 px-3 rounded-t-lg;
+  position: relative;
+}
+
+/* Gelişmiş hover efekti */
+.nav-link:hover {
+  @apply text-brand-500 font-semibold bg-brand-50 transform scale-105;
+}
+
+.nav-link.active {
+  @apply text-brand-500 font-semibold bg-brand-50;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-brand-500;
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Hover'da alt çizgi efekti */
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-brand-500 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/* Active Route Indicator */
+.route-indicator {
+  @apply absolute -bottom-0.5 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-brand-500 rounded-full;
+}
+
+/* Hover Animation */
+.nav-link:hover .route-indicator {
+  @apply scale-150 transition-transform duration-200;
+}
+
+/* Logo Hover Effects */
+.logo-hover {
+  @apply transition-all duration-300;
+}
+
+.logo-hover:hover {
+  @apply transform scale-105;
+}
+
+/* Navigation Item Hover Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Button Hover Effects */
+.btn-hover {
+  @apply transition-all duration-300;
+}
+
+.btn-hover:hover {
+  @apply transform scale-105 shadow-lg;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  @apply transition-all duration-200;
+}
+
+.mobile-menu-btn:hover {
+  @apply bg-brand-50 text-brand-500;
+}
