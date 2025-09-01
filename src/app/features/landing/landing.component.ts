@@ -11,90 +11,120 @@ import { RouterModule } from '@angular/router';
     <section
       class="min-h-screen bg-gradient-to-br from-warm-50 via-brand-50 to-cozy-50 flex items-center pt-16"
     >
-      <div class="container mx-auto px-4 md:px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-          <!-- Badge -->
-          <div
-            class="inline-flex items-center px-4 py-2 bg-warm-100 text-warm-700 rounded-full text-sm font-medium mb-6"
-          >
-            <img src="/qrhatira.png" alt="QR Hatıra" class="w-4 h-4 mr-2 rounded" />
-            🎉 Yeni özellikler eklendi!
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left Content -->
+          <div class="text-center lg:text-left">
+            <!-- Badge -->
+            <div
+              class="inline-flex items-center px-4 py-2 bg-warm-100 text-warm-700 rounded-full text-sm font-medium mb-6"
+            >
+              <img src="/qrhatira.png" alt="QR Hatıra" class="w-4 h-4 mr-2 rounded" />
+              🎉 Yeni özellikler eklendi!
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+              Anılarınızı
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-cozy-500"
+              >
+                kalıcı
+              </span>
+              kılın
+            </h1>
+
+            <p
+              class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto lg:mx-0 leading-relaxed"
+            >
+              Sevdiklerinizle paylaştığınız özel anları,
+              <span class="font-semibold text-brand-600">QR kod</span> ile kolayca toplayın. Her
+              gülümseme, her kahkaha, her anı değerli! 💝
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+              <button
+                class="btn bg-gradient-to-r from-brand-500 to-brand-600 text-white hover:from-brand-600 hover:to-brand-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
+              >
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+                Hemen Başla - Ücretsiz!
+              </button>
+              <button
+                class="btn bg-white text-brand-600 border-2 border-brand-200 hover:bg-brand-50 hover:border-brand-300 transform hover:scale-105 transition-all duration-200 shadow-md"
+              >
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                Nasıl Çalışır?
+              </button>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div
+              class="flex flex-wrap justify-center lg:justify-start items-center gap-6 text-sm text-gray-500"
+            >
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-warm-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                1000+ Mutlu Kullanıcı
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-warm-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                %99.9 Uptime
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-warm-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                7/24 Destek
+              </div>
+            </div>
           </div>
 
-          <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Anılarınızı
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-cozy-500">
-              kalıcı
-            </span>
-            kılın
-          </h1>
-
-          <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Sevdiklerinizle paylaştığınız özel anları,
-            <span class="font-semibold text-brand-600">QR kod</span> ile kolayca toplayın. Her
-            gülümseme, her kahkaha, her anı değerli! 💝
-          </p>
-
-          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <button
-              class="btn bg-gradient-to-r from-brand-500 to-brand-600 text-white hover:from-brand-600 hover:to-brand-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
-            >
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                ></path>
-              </svg>
-              Hemen Başla - Ücretsiz!
-            </button>
-            <button
-              class="btn bg-white text-brand-600 border-2 border-brand-200 hover:bg-brand-50 hover:border-brand-300 transform hover:scale-105 transition-all duration-200 shadow-md"
-            >
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-              Nasıl Çalışır?
-            </button>
-          </div>
-
-          <!-- Trust Indicators -->
-          <div class="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-500">
-            <div class="flex items-center">
-              <svg class="w-5 h-5 text-warm-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              1000+ Mutlu Kullanıcı
-            </div>
-            <div class="flex items-center">
-              <svg class="w-5 h-5 text-warm-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              %99.9 Uptime
-            </div>
-            <div class="flex items-center">
-              <svg class="w-5 h-5 text-warm-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              7/24 Destek
+          <!-- Right Content - Section Image -->
+          <div class="relative">
+            <div class="relative">
+              <img
+                src="/section.png"
+                alt="QR Hatıra - Etkinlik Anları"
+                class="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+              />
+              <!-- Floating Elements -->
+              <div
+                class="absolute -top-4 -left-4 w-8 h-8 bg-warm-400 rounded-full animate-bounce"
+              ></div>
+              <div
+                class="absolute -bottom-4 -right-4 w-6 h-6 bg-cozy-400 rounded-full animate-pulse"
+              ></div>
+              <div
+                class="absolute top-1/2 -left-6 w-4 h-4 bg-brand-400 rounded-full animate-ping"
+              ></div>
             </div>
           </div>
         </div>
